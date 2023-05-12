@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "529748287600",
+    "firebase_url": "https://ticketzone-db-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "ticketzone-db",
+    "storage_bucket": "ticketzone-db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529748287600:android:7e4ce75e72530dbe2d94b5",
+        "android_client_info": {
+          "package_name": "com.example.ticketzone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "529748287600-1374upio9upt6fvpkahp5b8u836qi5cs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjwYR1dc1QxNu5ab08CrZTk7qEZOGXGSk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "529748287600-1374upio9upt6fvpkahp5b8u836qi5cs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
