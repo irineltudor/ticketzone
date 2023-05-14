@@ -1,9 +1,6 @@
-import 'dart:math';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:ticketzone/screen/main/main_screen.dart';
 import 'package:ticketzone/screen/signup-signin/forgot_password_screen.dart';
@@ -11,7 +8,6 @@ import 'package:ticketzone/screen/signup-signin/google_registration_screen.dart'
 import 'package:ticketzone/screen/signup-signin/registration_screen.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
-import '../../helper/DBHelper.dart';
 import '../../model/ticket.dart';
 import '../../model/user.dart';
 import '../../service/ticket_service.dart';
@@ -88,7 +84,6 @@ class _LoginScreenState extends State<LoginScreen>
 
   @override
   Widget build(BuildContext context) {
-    final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
     //email field
     final emailField = TextFormField(

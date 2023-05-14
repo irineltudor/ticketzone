@@ -1,9 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:file_picker/file_picker.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:ticketzone/model/user.dart';
@@ -13,7 +10,6 @@ import 'package:ticketzone/service/ticket_service.dart';
 
 import '../../service/storage_service.dart';
 import '../../widget/menu_widget.dart';
-import '../home/home_screen.dart';
 import '../signup-signin/login_screen.dart';
 
 class SettingsScreen extends StatefulWidget {
@@ -58,7 +54,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
     final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
 
-    FilePickerResult? result;
     final changePictureButton = Material(
       elevation: 5,
       borderRadius: BorderRadius.circular(30),

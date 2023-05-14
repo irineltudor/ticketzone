@@ -1,19 +1,9 @@
-// import 'package:cloud_firestore/cloud_firestore.dart';
-// import 'package:firebase_auth/firebase_auth.dart';
-// import 'package:fiteat/model/diary.dart';
-// import 'package:fiteat/model/user_model.dart';
-// import 'package:fiteat/screens/home/home_screen.dart';
-// import 'package:fiteat/screens/signup-signin/details_screen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:ticketzone/helper/DBHelper.dart';
-import 'package:ticketzone/screen/home/home_screen.dart';
 import 'package:ticketzone/screen/main/main_screen.dart';
 import 'package:ticketzone/service/ticket_service.dart';
 import 'package:ticketzone/widget/date_picker_widget.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 
-import '../../model/ticket.dart';
 import '../../model/user.dart';
 
 class GoogleRegistrationScreen extends StatefulWidget {
@@ -26,7 +16,6 @@ class GoogleRegistrationScreen extends StatefulWidget {
 }
 
 class _GoogleRegistrationScreenState extends State<GoogleRegistrationScreen> {
-  final _auth = FirebaseAuth.instance;
   final UserModel user;
 
   final _formKey = GlobalKey<FormState>();

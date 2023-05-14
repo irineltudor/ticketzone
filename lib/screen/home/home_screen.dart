@@ -1,7 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:intl/intl.dart';
 import 'package:ticketzone/widget/menu_widget.dart';
 import 'package:vector_math/vector_math_64.dart' as math;
@@ -11,8 +10,6 @@ import '../../model/tournament.dart';
 import '../../model/user.dart';
 import '../../service/storage_service.dart';
 import '../../service/ticket_service.dart';
-import '../settings/settings_screen.dart';
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);

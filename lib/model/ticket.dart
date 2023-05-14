@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 class Ticket {
   String barcode;
   String? userId;

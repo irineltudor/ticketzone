@@ -1,9 +1,6 @@
-import 'dart:math';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:intl/intl.dart';
 import 'package:ticketzone/screen/tournament/tournament_screen.dart';
 
@@ -13,8 +10,6 @@ import '../../model/user.dart';
 import '../../service/storage_service.dart';
 import '../../service/ticket_service.dart';
 import '../../widget/menu_widget.dart';
-import '../settings/settings_screen.dart';
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import '../../widget/search_widget.dart';
 
 class TournamentsScreen extends StatefulWidget {
@@ -73,7 +68,6 @@ class _TournamentsScreenState extends State<TournamentsScreen> {
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
-    final width = MediaQuery.of(context).size.width;
 
     if (loggedInUser.email == null || tournamentList.isEmpty) {
       return Container(

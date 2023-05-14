@@ -1,7 +1,3 @@
-import 'dart:ffi';
-
-import 'package:ticketzone/model/ticket.dart';
-
 class Tournament {
   String? tournamentId;
   String? name;

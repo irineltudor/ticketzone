@@ -1,15 +1,8 @@
-import 'dart:math';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:intl/intl.dart';
-import 'package:ticketzone/helper/DBHelper.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
-
 import '../../model/ticket.dart';
 import '../../model/tournament.dart';
 import '../../model/user.dart';
@@ -17,6 +10,7 @@ import '../../service/storage_service.dart';
 import '../../service/ticket_service.dart';
 import 'package:video_player/video_player.dart';
 
+// ignore: must_be_immutable
 class TournamentScreen extends StatefulWidget {
   String tournamentId;
   TournamentScreen({super.key, required this.tournamentId});
@@ -111,7 +105,6 @@ class _TournamentScreenState extends State<TournamentScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
 
     final textColor = Colors.white;

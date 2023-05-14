@@ -1,5 +1,3 @@
-import 'package:ticketzone/model/ticket.dart';
-
 class UserModel {
   String? uid;
   String? email;

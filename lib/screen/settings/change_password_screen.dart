@@ -1,7 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 import '../../model/user.dart';
@@ -14,7 +13,6 @@ class ChangePasswordScreen extends StatefulWidget {
 }
 
 class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
-  final _auth = FirebaseAuth.instance;
   User? user = FirebaseAuth.instance.currentUser;
   UserModel loggedInUser = UserModel();
 
@@ -49,7 +47,6 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
-    final width = MediaQuery.of(context).size.width;
 
     final oldPasswordField = TextFormField(
       autofocus: false,
@@ -312,6 +309,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                           Navigator.of(context).pop();
                         }),
                       })
+                  // ignore: body_might_complete_normally_catch_error
                   .catchError((onError) {
                 errorMessage = "Password can't be changed" + onError.toString();
                 Fluttertoast.showToast(msg: '$errorMessage');

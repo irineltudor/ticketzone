@@ -4,19 +4,13 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:fluttertoast/fluttertoast.dart';
-import 'package:intl/intl.dart';
 import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 
 import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:ticketzone/model/user.dart';
-import 'package:ticketzone/screen/settings/settings_screen.dart';
 import 'package:ticketzone/service/storage_service.dart';
 
 class ChangeProfilePictureScreen extends StatefulWidget {
@@ -73,7 +67,7 @@ class _CaptureImageState extends State<ChangeProfilePictureScreen> {
         );
         setState(() {
           if (cropped != null) {
-            _profilePicture = File(cropped!.path);
+            _profilePicture = File(cropped.path);
           }
         });
       }
@@ -98,7 +92,6 @@ class _CaptureImageState extends State<ChangeProfilePictureScreen> {
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
-    final width = MediaQuery.of(context).size.width;
 
     final photoButton = Material(
         elevation: 5,

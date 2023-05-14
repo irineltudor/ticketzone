@@ -5,7 +5,6 @@ import 'package:ticketzone/screen/inventory/inventory_screen.dart';
 import 'package:ticketzone/screen/settings/settings_screen.dart';
 import 'package:ticketzone/screen/tournament/tournaments_screen.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
-import 'package:ticketzone/widget/menu_widget.dart';
 
 import '../../item/menu_item.dart';
 import '../menu/menu_screen.dart';
@@ -30,7 +29,6 @@ class _MainScreenState extends State<MainScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
     return Scaffold(
       bottomNavigationBar: CurvedNavigationBar(

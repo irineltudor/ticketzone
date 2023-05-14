@@ -1,8 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:intl/intl.dart';
 
 import '../../model/ticket.dart';
 import '../../model/tournament.dart';
@@ -10,10 +8,6 @@ import '../../model/user.dart';
 import '../../service/storage_service.dart';
 import '../../service/ticket_service.dart';
 import '../../widget/menu_widget.dart';
-import '../settings/settings_screen.dart';
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
-import 'package:barcode_image/barcode_image.dart';
-import 'package:image/image.dart' as img;
 import 'package:barcode_widget/barcode_widget.dart';
 import 'dart:math' as math;
 
